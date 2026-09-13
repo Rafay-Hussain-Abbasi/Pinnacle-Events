@@ -22,24 +22,31 @@ body {
 }
 
 .navBar {
-   
+
     height: 100px;
-    width: 100vw;
+    width: 100%;
     background: #261219 ;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10000;
     transition: all ease-in-out 250ms;;
+}
+
+.navBar.scrolled {
+    height: 70px;
+    background: #451515;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.35);
 }
 
 /*Styling logo*/
 .logo {
     width: 150px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    max-width: 40vw;
 }
 
 /*Styling Links*/
@@ -139,12 +146,18 @@ body {
         position: fixed;
         background: #fdab23;
         height: 100vh;
+        height: 100dvh;
         width: 100%;
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
+        padding: 0;
+    }
+
+    .navLink {
+        font-size: 20px;
     }
 
     .navLink.scrolled{
