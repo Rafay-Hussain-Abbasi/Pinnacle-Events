@@ -1,24 +1,43 @@
 footer {
     background-color: #261219 ;
     color: white;
-    padding-top: 30px;
+    padding: 30px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 3%;
+    text-align: center;
 }
 
-.foot-logo {
-    width: 8%;
-    margin-top: -8px;
+footer p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
 
 footer img {
-    margin-bottom: -5px;
     width: 100px;
+    vertical-align: middle;
 }
 
 
 .copyright {
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+
+    footer {
+        padding: 24px 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer img {
+        width: 70px;
+    }
+
 }
